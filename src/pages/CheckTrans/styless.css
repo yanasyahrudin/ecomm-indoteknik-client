@@ -1,0 +1,608 @@
+/* Add these styles to your existing CSS file or component */
+.pay-now{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.voucher-pickup-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoPickup{
+  padding-top: 10px;
+  text-align: start;
+  padding-right: 5px;
+}
+
+.payment-container {
+  padding: 20px 65px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.payment-details {
+  display: flex;
+  align-items: center;
+}
+
+.amount {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.payment-message {
+  margin-top: 5px;
+}
+
+.payment-button {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voucher-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20 0px;
+}
+
+.voucher-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.apply-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+
+.modal-content {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Latar belakang konten transparan */
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.setAddress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.secRightPay {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 80px; */
+  margin: 0 50px;
+}
+
+/* CSS untuk mengatur jarak antara voucher */
+.voucherCheck label {
+  margin-right: 2px;
+}
+.checkVou {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 80px;
+  /* max-width: 500px; Atur lebar maksimum kontainer grid */
+}
+
+.edit {
+  padding-top: 15px;
+  width: 30px;
+  height: 30px;
+}
+.alamat {
+  max-width: auto;
+  margin: 0 30px 0 30px;
+  padding: 0 30px 20px 30px;
+  border: 1px solid rgb(232, 215, 215);
+  border-radius: 10px;
+}
+
+.Produk {
+  max-width: auto;
+  margin: 15px 30px;
+  padding: 0 30px 20px 30px;
+  border: 1px solid rgb(232, 215, 215);
+  border-radius: 10px;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address-info {
+  display: flex;
+  align-items: center;
+}
+
+.address-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.address-info p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.cart-checkout {
+  line-height: 30px;
+}
+
+.subtot {
+  font-size: 18px;
+}
+
+.subtotVou {
+  font-size: 18px;
+}
+
+.amountSub {
+  font-size: 18px;
+}
+
+.subtotal .amount {
+  font-size: 16px;
+}
+
+.Total {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.ppn {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  border: 1px solid transparent;
+  background-color: #edf5fa;
+  padding: 3px 0;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 16px;
+  width: 80%;
+}
+
+.action {
+  padding: 0 0 0 20px;
+}
+
+.imageProduct {
+  width: 100px;
+  height: auto;
+}
+
+.edit-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: blue;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.calcongkir {
+  width: auto;
+  margin: 0;
+  /* padding: 5px 20px 20px 20px;
+  border: 1px solid rgb(244, 238, 238);
+  border-radius: 10px;
+  background-color: #edf5fa; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.ongPay {
+  display: flex;
+  justify-content: space-between;
+  /* padding-top: 40px; */
+  padding: 0;
+  margin: 0;
+}
+
+.imgVoucerCheck {
+  width: 150px;
+}
+
+.ShippingCost {
+  margin-top: 20px;
+}
+
+.subtotalVou {
+  display: flex;
+  justify-content: space-between;
+}
+
+.methodDeliverySelect {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+  width: 100%;
+  margin: 3px auto;
+}
+
+.paybut {
+  /* padding: 0 65px; */
+  padding-top: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.totBuy {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.totalBuy {
+  display: flex;
+  align-content: center;
+}
+
+.methodDeliveryOption {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.shipping-cost-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.calcongkir input[type="radio"] {
+  display: none;
+}
+
+.calcongkir input[type="radio"] + label {
+  padding: 10px 15px;
+  background-color: #f0f0f5;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.calcongkir input[type="radio"]:checked + label {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.calcongkir input[type="radio"] + label p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Styles for the payment summary section */
+.payment-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.payment-summary .amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.payment-summary button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.payment-summary button:hover {
+  background-color: #f0f0f5;
+}
+
+/* CSS untuk mengatur modal dan latar belakang */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS untuk tombol penutup modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  .button-back{
+    background-color: darkblue;
+    margin-left: 10%;
+  }
+  .pay-now{
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .payment-container {
+    padding: 20px 65px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .voucher-pickup-container {
+    flex-direction: column; /* Mengubah arah tata letak menjadi kolom */ 
+}
+  .infoPickup{
+    padding-top: 1%;
+}
+
+  .ongPay {
+    margin: 20px 0 30px 0;
+    padding: 0;
+  }
+  .secRightPay {
+    padding: 0;
+    margin: 0;
+  }
+  .calcongkir {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .alamat {
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 0 10px;
+    padding: 15px 15px;
+  }
+  .kodeVouc {
+    font-size: 12px;
+  }
+  .totBay {
+    font-size: 12px;
+  }
+  .amountbay {
+    font-size: 12px;
+  }
+  .address-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .address-info p {
+    margin: 0;
+    font-size: 10px;
+    color: #666;
+  }
+
+  .paybut {
+    margin-top: -8px;
+  }
+  .contentVouc {
+    font-size: 10px;
+    margin-top: -5px;
+    width: 300px;
+  }
+  .imgVoucerCheck {
+    width: 90px;
+  }
+  .checkVou {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    gap: 40px;
+  }
+  .ongkir {
+    font-size: 10px;
+    width: 100%;
+    margin: 8px 3px;
+  }
+  .serong {
+    font-size: 10px;
+  }
+  .befBut {
+    font-size: 12px;
+  }
+  .setAddress {
+    font-size: 12px;
+  }
+  .edit {
+    width: 20px;
+    height: 20px;
+  }
+  .address-info h4 {
+    /* font-size: 10px; */
+    font-size: x-small;
+    line-height: 10px;
+  }
+  .contentAl {
+    font-size: xx-small;
+  }
+  .Produk {
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 0 10px;
+    padding: 15px 15px;
+  }
+  .judulcheck {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .titles {
+    display: none;
+  }
+  .product-title {
+    display: none;
+  }
+  .price {
+    display: none;
+  }
+  .quantity {
+    display: none;
+  }
+  .total {
+    display: none;
+  }
+  .cart-product {
+    border-top: none; /* Menghapus garis pembatas pada elemen terakhir */
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    font-size: 10px;
+  }
+  .imageProduct {
+    height: auto;
+  }
+  .amountSub {
+    font-size: 12px;
+  }
+  .amountTot {
+    font-size: 12px;
+  }
+  .butRemove {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .cart-product-quantityIR {
+    font-size: 10px;
+    padding-left: 85%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  .subtotVou {
+    font-size: 12px;
+  }
+  .cart-container {
+    padding: 0;
+    margin-top: -25px;
+  }
+  .subtot,
+  .subtotal {
+    font-size: 12px;
+  }
+  .subtotalVou {
+    line-height: 15px;
+  }
+
+  .pilihShip {
+    font-size: 12px;
+  }
+  .methodDeliverySelect {
+    font-size: 10px;
+    display: flex;
+    width: 61%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .methodDeliveryOptionProvince {
+    font-size: 12px;
+  }
+
+  .hpus {
+    padding: 5px 0;
+  }
+}

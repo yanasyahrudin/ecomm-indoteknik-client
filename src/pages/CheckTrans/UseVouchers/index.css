@@ -1,0 +1,23 @@
+.voucher-container{
+    width: 30%;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .kodeVouc{
+        font-size: medium;
+        padding-top: 10%;
+    }
+    .contentVouc{
+        font-size: small;
+    }
+    .voucher-container{
+        width: 100%;
+        padding-left: 0%;
+
+    }
+    
+}

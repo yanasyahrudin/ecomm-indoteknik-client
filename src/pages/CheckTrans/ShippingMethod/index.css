@@ -1,0 +1,18 @@
+.methodDeliverySelect{
+    font-size: small;
+    width: 70%;
+}
+@media (max-width:768px) {
+    .pilihShip{
+        font-size: small;
+        padding-top: 3%;
+    }
+    .methodDeliverySelect{
+        font-size: small;
+        width: 100%;
+        margin: 0px 24px;
+    }
+    .voucher-container{
+        padding-bottom: 30px;
+    }
+}

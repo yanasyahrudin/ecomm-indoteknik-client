@@ -1,0 +1,28 @@
+.prdtwsl {
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.backDetail {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .prdtwsl {
+    margin: 0 15px 40px 15px;
+    padding-top: 0px;
+  }
+
+  .backDetail {
+    display: block;
+    /* Show the back button on smaller screens */
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+  }
+}

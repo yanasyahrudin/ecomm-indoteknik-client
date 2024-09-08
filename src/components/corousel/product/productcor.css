@@ -1,0 +1,16 @@
+.slide-container {
+  width: auto;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cor {
+      width: 8dvh; /* Set the container to full width */
+    }
+  
+    .slide-container img {
+      max-width: 100%; /* Make sure images don't exceed the container width */
+      height: auto; /* Maintain the aspect ratio */
+    }
+  }
+  

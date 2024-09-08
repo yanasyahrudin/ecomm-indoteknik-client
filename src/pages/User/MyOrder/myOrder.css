@@ -1,0 +1,226 @@
+/* Styles for the Checkout Products Page */
+/* Updated Styles for Tabs */
+.mobile-title {
+  display: none;
+}
+
+.tabs-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 80px; */
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+
+.tab-button {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #ADD8E6;
+  border-color: darkblue;
+}
+
+/* Hover Effect for Tabs */
+/* .tab-button:hover {
+  background-color: #0056b3;
+} */
+
+
+.searchMyOrder{
+  padding-top: 100px;
+  padding-left: 300px; 
+  
+}
+
+.searchMyOrder {
+  padding-top: 10px;
+  width: 20%; /* Adjust width as needed */
+}
+
+.search-container {
+  position: relative;
+  padding-left: 305px;
+  padding-top: 10px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 315px; /* Sesuaikan posisi ikon sesuai kebutuhan */
+  top: 60%;
+  transform: translateY(-50%);
+  color: #555; /* Sesuaikan warna ikon sesuai kebutuhan */
+}
+
+input[type="text"] {
+  padding: 10px 30px 10px 40px; /* Sesuaikan padding sesuai kebutuhan */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+
+.checkout-container {
+  max-width: 1300px;
+  /* Lebar maksimal 1350px */
+  margin: 0 auto;
+  /* Pusatkan konten */
+  padding: 20px;
+}
+
+.checkout-table {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  margin: 25px 300px;
+  margin-right: 50px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.table-responsive {
+  margin-top: 10px;
+  overflow-x: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: lightblue;
+  color: #080808;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styling for the product info */
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+/* Buy Again Button */
+.buy-again-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-again-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add this section at the end of your existing CSS styles */
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+
+  h2 {
+    display: none; /* Hide the original title on mobile view */
+  }
+
+  .mobile-title {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 60px;
+    font-size: larger;
+  }
+  
+  .title-transaction-list {
+    padding-right: 100px;
+  }
+
+  .tabs-search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tabs {
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+
+
+  .tab-button {
+    margin: 0px 5px;
+    padding: 5px 10px;
+  }
+
+  .searchMyOrder {
+    width: 94%;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .checkout-table {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: 95%;
+    margin-right: 0px;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-info img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 78%;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 25px; /* Sesuaikan posisi ikon sesuai kebutuhan */
+    top: 55%;
+    transform: translateY(-50%);
+    color: #555; /* Sesuaikan warna ikon sesuai kebutuhan */
+  }
+}
+

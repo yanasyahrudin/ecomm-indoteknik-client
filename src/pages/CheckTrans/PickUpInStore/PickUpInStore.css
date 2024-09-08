@@ -1,0 +1,34 @@
+/* PickUpInStore.css */
+
+.PickUpInStoreContainer {
+  margin-top: 3%;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.deliveryOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxLabel {
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: small;
+  color: #333;
+}
+
+/* Additional styling can be applied as per your design preferences */
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 600px) {
+  .PickUpInStoreContainer {
+      width: 85%; /* Adjust the width for mobile screens */
+  }
+  
+  
+  /* Add any additional mobile-specific styles here */
+}

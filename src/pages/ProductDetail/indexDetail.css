@@ -1,0 +1,18 @@
+/* For screens 768 pixels and below */
+@media (max-width: 768px) {
+  .button-back{
+      display: block;
+  }
+  .buyDetail {
+    margin-left: 15px;
+  }
+  .backDetail {
+    display: block; /* Show the back button on smaller screens */
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+
+}
+
