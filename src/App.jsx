@@ -36,6 +36,7 @@ import MyOrder from './pages/User/MyOrder'
 import Sidebar from "./components/sidebarUser";
 import DetailsInvoice from './pages/User/MyOrder/DetailsInvoice'
 import AboutUs from "./pages/aboutUs";
+import Footer from './components/footer/index';
 
 const Routing = () => {
   return (
@@ -89,6 +90,7 @@ function App() {
         <Navbar />
         <Sidebar allowedRoutes={sidebarRoutes} />
         <Routing />
+        <Footer />
       </Provider>
     </BrowserRouter>
   );

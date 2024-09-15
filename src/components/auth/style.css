@@ -1,10 +1,10 @@
 .containerlogin {
   margin: -20px auto 0 185px;
-  position: fixed;
+  position: relative;
 }
 .containerregis {
   margin: 10px auto 0 300px;
-  position: fixed;
+  position: relative;
 }
 
 .imgStack {

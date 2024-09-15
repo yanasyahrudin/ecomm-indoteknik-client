@@ -91,8 +91,7 @@ const ProductList = () => {
   };
 
   useEffect(() => {
-    const categoriesApiUrl =
-      "http://localhost:3100/product-categories/";
+    const categoriesApiUrl = "http://localhost:3100/product-categories/";
 
     axios
       .get(categoriesApiUrl)
@@ -112,8 +111,7 @@ const ProductList = () => {
   const handleAddToCart = async (product) => {
     const accessToken = localStorage.getItem("access_token");
     if (accessToken) {
-      const url =
-        "http://localhost:3100/product-carts";
+      const url = "http://localhost:3100/product-carts";
       try {
         const response = await axios.post(url, product, {
           headers: { access_token: accessToken },
@@ -145,7 +143,7 @@ const ProductList = () => {
           if (selectedCategories.length === 0) {
             return true;
           }
-          return selectedCategories.includes(product.categories.name); 
+          return selectedCategories.includes(product.categories.name);
         })
         .filter((product) => {
           if (minPrice !== "" && maxPrice !== "") {
