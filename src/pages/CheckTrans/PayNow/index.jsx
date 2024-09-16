@@ -61,7 +61,7 @@ function PayNow() {
     useEffect(() => {
         const fetchVouchers = async () => {
             try {
-                const response = await axios.get("https://indoteknikserver-732012365989.herokuapp.com/admin-sellers");
+                const response = await axios.get("http://localhost:3100/admin-sellers");
                 setVouchers(response.data);
             } catch (error) {
                 console.log("Error fetching vouchers:", error);
@@ -84,7 +84,7 @@ function PayNow() {
 
         let params = { total: bayar };
         const response = await axios({
-            url: `https://indoteknikserver-732012365989.herokuapp.com/midtrans/donik`,
+            url: `http://localhost:3100/midtrans/donik`,
             params,
             data: {
                 carts,
@@ -218,7 +218,7 @@ function PayNow() {
         const fetchProvinceData = async () => {
             try {
                 const response = await axios.get(
-                    "https://indoteknikserver-732012365989.herokuapp.com/users/province",
+                    "http://localhost:3100/users/province",
                     {
                         headers: { access_token: localStorage.getItem("access_token") },
                     }
@@ -239,7 +239,7 @@ function PayNow() {
         setCheckoutProvince(found.province);
         try {
             const response = await axios.get(
-                `https://indoteknikserver-732012365989.herokuapp.com/users/city/${checkoutProvinceId}`,
+                `http://localhost:3100/users/city/${checkoutProvinceId}`,
                 {
                     headers: { access_token: localStorage.getItem("access_token") },
                 }
@@ -256,7 +256,7 @@ function PayNow() {
         setCheckoutCity(found.city_name);
         try {
             const response = await axios.get(
-                `https://indoteknikserver-732012365989.herokuapp.com/users/subdistrict/${selectedCityId}`,
+                `http://localhost:3100/users/subdistrict/${selectedCityId}`,
                 {
                     headers: { access_token: localStorage.getItem("access_token") },
                 }
@@ -276,7 +276,7 @@ function PayNow() {
         setCheckoutSubdistrict(found.subdistrict_name);
         const totalWeight = calculateTotalWeight(); // Calculate total weight dynamically
         let query = { destination: selectedCityId, courier, weight: totalWeight };
-        let url = `https://indoteknikserver-732012365989.herokuapp.com/users/cost`;
+        let url = `http://localhost:3100/users/cost`;
         let { data } = await axios({
             url,
             params: query,
